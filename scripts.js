@@ -87,5 +87,5 @@ function desistir(){
     location.reload();
 }
 function ganar(){
-   if (k==palabraSecreta.length){alert("has ganado el juego");}
+   if (k==palabraSecreta.length-1){alert("has ganado el juego");}
 }
