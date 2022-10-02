@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "reset.css">
+    <link rel ="stylesheet" href ="style.css">
+
+    <title>Alura - Challenge 2</title>
+</head>
+<body>
+    <header><img src="imagenes/logo.jpg"></header>
+    <main>
+        <section class="superior">
+            <label for="entradaPalabras" id="label1">Máximo palabras de 8 letras mayúsculas</label>
+            <input name="entradaPalabras" id="input1">
+            <button class="azul" onclick="jugar()" id="iniciarJuego">Iniciar Juego</button>
+            <button class="soloBorde" id="agregarPalabra"onclick="agregarPalabra()">agregar palabra</button>  
+
+            <canvas id="ahorcado" width="1200" height="860"></canvas>
+
+        </section>
+        <section class="inferior">
+            <button class="azul"  id="nuevoJuego" onclick="nuevoJuego()">Nuevo juego</button>
+            <button class="soloBorde" id="desistir" onclick="desistir()">Desistir</button>
+            <button class="soloBorde" id="guardar" onclick="guardarPalabra()">Guardar palabra</button>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="scripts.js"></script>
+    <script src="canvas.js"></script>
+</body>
+</html>
